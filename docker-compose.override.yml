@@ -22,24 +22,6 @@ services:
         - ./log:/var/opt/mssql/log
         - ./secrets:/var/opt/mssql/secrets
      
-  # catalogdb:
-  #   container_name: catalogdb
-  #   environment:
-  #       SA_PASSWORD: "Firat3521"
-  #       ACCEPT_EULA: "Y"
-  #   restart: always
-  #   ports:
-  #       - "10434:1433" 
-  
-  # orderdb:
-  #   container_name: orderdb
-  #   environment:
-  #       SA_PASSWORD: "Firat3521"
-  #       ACCEPT_EULA: "Y"
-  #   restart: always
-  #   ports:
-  #       - "10435:1433" 
-
   rabbitmq:
     container_name: rabbitmq
     restart: always
